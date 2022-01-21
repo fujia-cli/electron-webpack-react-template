@@ -4,5 +4,5 @@ else
     icon: 'resource/unrelease/icon.icns',
     type: 'distribution',
     identity:
-      'Apple Distribution: Marathon System Technology Co., Ltd. (******BACWL)',
+      'Apple Distribution: <%= packageName %> System Technology Co., Ltd.',
   };

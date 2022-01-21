@@ -1,12 +1,12 @@
 {
-  "name": "@fujia/electron-webpack-react-template",
-  "version": "0.1.0",
-  "description": "A template for electron and build with webpack & react",
+  "name": "<%= packageName %>",
+  "version": "<%= version %>",
+  "description": "",
   "scripts": {
     "prepare": "husky install",
     "start": "node ./script/dev",
     "release": "node ./script/release",
-    "test": "jest --detectOpenHandles"
+    "test": "jest"
   },
   "keywords": [
     "electron",
@@ -22,7 +22,7 @@
   },
   "lint-staged": {
     "*.{tsx,js,jsx}": "eslint --cache",
-    "*.{css,scss,sass,html}": "stylelint",
+    "*.{css,scss,sass}": "stylelint",
     "*.**": "prettier --check --ignore-unknown"
   },
   "devDependencies": {

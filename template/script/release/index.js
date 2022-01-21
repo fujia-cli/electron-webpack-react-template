@@ -117,8 +117,8 @@ const release = {
         },
         files: ['**'],
         extends: null,
-        productName: 'Marathon',
-        appId: 'site.fujia.marathon',
+        productName: '<%= packageName %>',
+        appId: 'site.fujia.app', // the property is important, replace with you own appId
         asar: true,
         extraResources: require('../common/extraResources.js'),
         win: require('../common/winConfig.js'),
