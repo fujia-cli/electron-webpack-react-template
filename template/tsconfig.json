@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "react",
+    "sourceMap": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
+    "baseUrl": "./",
+    "paths": {
+      "@pages/*": ["./src/renderer/pages/*"],
+      "@store/*": ["./src/renderer/store/*"],
+      "@utils/*": ["./src/renderer/utils/*"],
+      "@components/*": ["./src/renderer/components/*"]
+    }
+  },
+  "exclude": ["release", "node_modules"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx"]
+}

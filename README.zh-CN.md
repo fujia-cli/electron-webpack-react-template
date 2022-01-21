@@ -10,17 +10,15 @@
 
 <div align="center">
 
-A template for electron and build with webpack & react.
+一套使用 react + redux + webpack 构建 Electron 的模板。
 
 </div>
 
 <div align="center">
 
-English | [简体中文](./README.zh-CN.md)
+[English](./README.md) | 简体中文
 
 </div>
-
-## Getting started
 
 ## References
 

@@ -1,0 +1,44 @@
+{
+  "name": "@fujia/electron-webpack-react-template",
+  "version": "0.1.0",
+  "description": "A template for electron and build with webpack & react",
+  "keywords": [
+    "template",
+    "stage",
+    "electron",
+    "webpack"
+  ],
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "files": [
+    "template"
+  ],
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fujia-cli/electron-webpack-react-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fujia-cli/electron-webpack-react-template/issues"
+  },
+  "homepage": "https://github.com/fujia-cli/electron-webpack-react-template#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": {
+    "name": "fujia",
+    "url": "https://github.com/fushenguang",
+    "email": "fujia.site@outlook.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "husky": "^7.0.4"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "name": "@fujia/electron-webpack-react-template",
+  "version": "0.1.0",
+  "description": "A template for electron and build with webpack & react",
+  "scripts": {
+    "prepare": "husky install",
+    "start": "node ./script/dev",
+    "release": "node ./script/release",
+    "test": "jest --detectOpenHandles"
+  },
+  "keywords": [
+    "electron",
+    "webpack",
+    "react"
+  ],
+  "author": "",
+  "license": "MIT",
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{tsx,js,jsx}": "eslint --cache",
+    "*.{css,scss,sass,html}": "stylelint",
+    "*.**": "prettier --check --ignore-unknown"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.10",
+    "@babel/plugin-transform-modules-commonjs": "^7.16.8",
+    "@babel/plugin-transform-runtime": "^7.16.10",
+    "@babel/preset-env": "^7.16.10",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "@reduxjs/toolkit": "^1.7.1",
+    "@types/jest": "^27.4.0",
+    "@types/node": "^17.0.10",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "@types/react-redux": "^7.1.22",
+    "@types/react-router-dom": "^5.3.3",
+    "babel-loader": "^8.2.3",
+    "classnames": "^2.3.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.5.1",
+    "electron": "^13.6.6",
+    "electron-builder": "^22.14.5",
+    "html-webpack-plugin": "^5.5.0",
+    "husky": "^7.0.4",
+    "jest": "^27.4.7",
+    "lint-staged": "^12.2.1",
+    "prettier": "^2.5.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router": "^6.2.1",
+    "react-router-dom": "^6.2.1",
+    "redux": "^4.1.2",
+    "sass": "^1.49.0",
+    "sass-loader": "^12.4.0",
+    "spectron": "^15.0.0",
+    "style-loader": "^3.3.1",
+    "stylelint": "^14.2.0",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.4",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.66.0",
+    "webpack-dev-server": "^3.11.3",
+    "webpack-merge": "^5.8.0",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
