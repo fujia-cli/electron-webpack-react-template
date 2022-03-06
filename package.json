@@ -12,7 +12,8 @@
     "prepare": "husky install"
   },
   "files": [
-    "template"
+    "template",
+    "!template/release"
   ],
   "commitlint": {
     "extends": [
