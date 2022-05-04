@@ -1,16 +1,16 @@
 <div align="center">
-  <a href="" target="_blank">
-    <img alt="hammer logo" width="200" src="https://static-images-1305792369.cos.ap-shanghai.myqcloud.com/hammer.svg"/>
+  <a href="https://github.com/fujia-cli/electron-webpack-react-template" target="_blank">
+    <img alt="logo" width="200" src="./resource/unrelease/png/256x256.png"/>
   </a>
 </div>
 
 <div align="center">
-  <h1><%= packageName %></h1>
+  <h1></h1>
 </div>
 
 <div align="center">
 
-应用简介..
+一套使用 react + redux + webpack 构建 Electron 的模板。
 
 </div>
 
@@ -20,7 +20,7 @@
 
 </div>
 
-### 开始
+## 开始
 
 首先，通过下面的命令安装相应的 cli tools:
 
@@ -63,7 +63,7 @@ npm init stage@latest
 
 就是这样, 项目会自动安装依赖并启动。
 
-### 开发
+## 开发
 
 在 dev 环境下启动应用:
 
@@ -83,7 +83,7 @@ npm run release
 npm run pack
 ```
 
-### 注意
+## 注意
 
 1. 默认情况下，我们禁用了 node integration, 为什么? [查看这里](https://www.electronjs.org/docs/latest/tutorial/security#2-do-not-enable-nodejs-integration-for-remote-content)
 
@@ -121,15 +121,15 @@ webPreferences: {
 },
 ```
 
-### Maintainers
+## Maintainers
 
 - [fujia](https://github.com/fushenguang)
 
-### License
+## License
 
 MIT © [electron-webpack-react-template](https://github.com/fujia-cli/electron-webpack-react-template)
 
-### 参考资料
+## 参考资料
 
 1. 《深入浅出 Electron：原理、工程与实践》
 

@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/fujia-cli/electron-webpack-react-template" target="_blank">
-    <img alt="hammer logo" width="200" src="./resource/unrelease/png/256x256.png"/>
+    <img alt="logo" width="200" src="./resource/unrelease/png/256x256.png"/>
   </a>
 </div>
 
@@ -20,7 +20,7 @@ English | [简体中文](./README.zh-CN.md)
 
 </div>
 
-### Getting started
+## Getting started
 
 At first, you can install the cli tools by following commands:
 
@@ -63,7 +63,7 @@ npm init stage@latest
 
 That's all, the project will install the dependencies and devDependencies, then running automatically.
 
-### Starting Development
+## Starting Development
 
 Start the app in the dev environment:
 
@@ -83,7 +83,7 @@ Build unpacked dir which useful to test.
 npm run pack
 ```
 
-### Notes
+## Notes
 
 1. By default, we have disabled node integration, why? [seeing here](https://www.electronjs.org/docs/latest/tutorial/security#2-do-not-enable-nodejs-integration-for-remote-content)
 
@@ -121,15 +121,15 @@ webPreferences: {
 },
 ```
 
-### Maintainers
+## Maintainers
 
 - [fujia](https://github.com/fushenguang)
 
-### License
+## License
 
 MIT © [electron-webpack-react-template](https://github.com/fujia-cli/electron-webpack-react-template)
 
-### References
+## References
 
 1. 《深入浅出 Electron：原理、工程与实践》
 
