@@ -1,17 +1,27 @@
 export const ROUTER = {
   home: '/',
-  counter: '/counter',
+  login: '/login',
+  register: '/register',
+  develop: '/develop',
+  tools: '/tools',
+  services: '/services',
+  apps: '/apps',
 };
 
 export const ROUTER_KEYS = {
   home: 'home',
-  counter: 'counter',
+  login: 'login',
+  register: 'register',
+  develop: 'develop',
+  tools: 'tools',
+  services: 'services',
+  apps: 'apps',
 };
 
 export const ROUTER_ENTRY: IRouter.Item[] = [
   {
-    url: ROUTER.counter,
-    key: ROUTER_KEYS.counter,
-    text: '计数器',
+    url: ROUTER.home,
+    key: ROUTER_KEYS.home,
+    text: '首页',
   },
 ];

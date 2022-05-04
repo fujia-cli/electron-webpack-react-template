@@ -1,0 +1,13 @@
+{
+  "users": {
+    "success": true,
+    "data": []
+  },
+  "profiles": {
+    "success": true,
+    "data": {
+      "username": "sunny",
+      "avatar": "https://images-1254102905.cos.ap-shanghai.myqcloud.com/articles/amine-m-siouri-xnxqvCX_EJE-unsplash.png"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+main.home-main {
+  margin-top: 50px;
+  min-height: calc(100vh - 100px);
+  width: 100vw;
+  padding: 32px 50px;
+}
+
+footer.home-footer {
+  height: 50px;
+  line-height: 50px;
+  padding: 0;
+  text-align: center;
+}

@@ -1,0 +1,7 @@
+build
+coverage
+scripts
+resource
+release
+.vscode
+.husky
