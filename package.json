@@ -1,6 +1,6 @@
 {
   "name": "@fujia/electron-webpack-react-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A template for electron and build with webpack & react",
   "keywords": [
     "template",
