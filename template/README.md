@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/fujia-cli/electron-webpack-react-template" target="_blank">
-    <img alt="hammer logo" width="200" src="./resource/unrelease/png/256x256.png"/>
+    <img alt="logo" width="200" src="./resource/unrelease/png/256x256.png"/>
   </a>
 </div>
 
