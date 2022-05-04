@@ -85,7 +85,7 @@ npm run pack
 
 ## 注意
 
-1. 默认情况下，我们禁用了 node integration, 为什么? [查看这里](https://www.electronjs.org/docs/latest/tutorial/security#2-do-not-enable-nodejs-integration-for-remote-content)
+默认情况下，我们禁用了 node integration, 为什么? [查看这里](https://www.electronjs.org/docs/latest/tutorial/security#2-do-not-enable-nodejs-integration-for-remote-content)
 
 如果你想启用 node integration 或使用原生模块，请按照下面的步骤修改对应的配置：
 

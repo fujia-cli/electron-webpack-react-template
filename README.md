@@ -85,7 +85,7 @@ npm run pack
 
 ## Notes
 
-1. By default, we have disabled node integration, why? [seeing here](https://www.electronjs.org/docs/latest/tutorial/security#2-do-not-enable-nodejs-integration-for-remote-content)
+By default, we have disabled node integration, why? [seeing here](https://www.electronjs.org/docs/latest/tutorial/security#2-do-not-enable-nodejs-integration-for-remote-content)
 
 if you want to enable the option or use native modules, please make the following changes:
 
