@@ -1,4 +1,3 @@
-import React from 'react';
 import { ArrowLeftOutlined } from '@ant-design/icons';
 import { Button, Card } from 'antd';
 import { useNavigate } from 'react-router';

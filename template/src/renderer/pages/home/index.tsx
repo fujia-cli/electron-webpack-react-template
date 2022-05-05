@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate, useLocation, Outlet } from 'react-router-dom';
 // import { shell } from 'electron';
 import { Layout, Menu, Avatar, Dropdown } from 'antd';

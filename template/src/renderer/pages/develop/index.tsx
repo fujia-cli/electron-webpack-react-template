@@ -1,5 +1,3 @@
-import React from 'react';
-import { Button } from 'antd';
 import { Icon } from '@components/Icon';
 
 export const DevelopPage = () => {

@@ -43,10 +43,6 @@ module.exports = merge(baseConfig, {
       DEBUG_PROD: false,
       START_MINIMIZED: false,
     }),
-
-    new BundleAnalyzerPlugin({
-      analyzerMode: process.env.ANALYZE === 'true' ? 'server' : 'disabled',
-    }),
   ],
   /**
   * Disables webpack processing of __dirname and __filename.

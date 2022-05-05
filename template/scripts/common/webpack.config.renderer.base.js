@@ -30,10 +30,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx|ts|tsx)$/,
+        test: /\.([jt]sx?)$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: 'ts-loader',
+          options: {
+            // Remove this line to enable type checking in webpack builds
+            transpileOnly: true,
+          }
         },
       },
       {
@@ -59,22 +63,8 @@ module.exports = {
         ],
         include: [assetsIconsPath]
       },
-      // {
-      //   test: /\.(jpg|png|jpeg|gif|svg)$/,
-      //   use: [
-      //     {
-      //       loader: 'url-loader',
-      //       options: {
-      //         limit: 2048,
-      //         name: '[name]_[hash:5].[ext]',
-      //         outputPath: 'images/',
-      //       },
-      //     },
-      //   ],
-      //   exclude: [assetsIconsPath]
-      // },
-       // Fonts
-       {
+      // Fonts
+      {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
       },

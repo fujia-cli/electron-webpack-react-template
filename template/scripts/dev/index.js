@@ -6,9 +6,9 @@ const webpack = require('webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const WebpackDevServer = require('webpack-dev-server');
 
-const webpackRendererDevConfig = require('../common/webpack.config.renderer.dev');
+const webpackRendererBaseConfig = require('../common/webpack.config.renderer.base');
 const mainBaseConfig = require('../common/webpack.config.base');
-const { checkPortInUse } = require('../common/utils');
+// const { checkPortInUse } = require('../common/utils');
 const { releaseBundledPath, srcMainEntryPath, releaseMainEntryPath } = require('../common/webpack.paths')
 
 const cwdDir = process.cwd();
@@ -137,15 +137,19 @@ const dev = {
     const devServerConfig = {
       static: releaseBundledPath,
       port: this.serverPort,
-      compress: true,
-      hot: false,
+      host: '0.0.0.0',
+      hot: true,
+      liveReload: true,
       headers: { 'Access-Control-Allow-Origin': '*' },
       historyApiFallback: {
         verbose: true,
       },
     };
 
-    const compiler = webpack(webpackRendererDevConfig);
+    const compiler = webpack(merge(webpackRendererBaseConfig, {
+      mode: 'development',
+      devtool: 'inline-source-map',
+    }));
     this.server = new WebpackDevServer(devServerConfig, compiler);
 
     this.server.start().then(() => {
