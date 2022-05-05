@@ -65,19 +65,46 @@ That's all, the project will install the dependencies and devDependencies, then 
 
 ### Starting Development
 
-Start the app in the dev environment:
+1. Start the app in the dev environment:
 
 ```sh
 npm start
 ```
 
-To package apps for the local platform:
+2. To package apps for the local platform by following command:
 
 ```sh
 npm run release
 ```
 
-Build unpacked dir which useful to test.
+however, please note that the project should have a git repository， otherwise， the above command will fail. By default, it's github, you can see the file `scripts/release/index.js`:
+
+```js
+const release = {
+  // ...
+  buildInstaller() {
+    // ...
+    publish: {
+      provider: 'github',
+      repo: '',
+      releaseType: 'release',
+      // token: process.env.GH_TOKEN,
+    },
+    publish: 'always',
+    // ...
+  }
+}
+```
+
+you can add remote github repository manually, or using the following command:
+
+```sh
+stage publish
+```
+
+> tips：if you have installed cli tools of @fujia/cli-core, the stage command is available in the global scope.
+
+3. Build unpacked dir which useful to test.
 
 ```sh
 npm run pack

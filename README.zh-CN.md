@@ -65,19 +65,46 @@ npm init stage@latest
 
 ## 开发
 
-在 dev 环境下启动应用:
+1. 在 dev 环境下启动应用:
 
 ```sh
 npm start
 ```
 
-为当前宿主机的操作系统打包应用:
+2. 使用下面的命令，为当前宿主机的操作系统打包应用:
 
 ```sh
 npm run release
 ```
 
-构建一个未打包的应用，便于测试。
+但是，请注意, 当前项目需要指定一个 git 仓库，否则，上面的命令会失败。默认情况下是使用 GitHub 的，可以查看文件`scripts/release/index.js`：
+
+```js
+const release = {
+  // ...
+  buildInstaller() {
+    // ...
+    publish: {
+      provider: 'github',
+      repo: '',
+      releaseType: 'release',
+      // token: process.env.GH_TOKEN,
+    },
+    publish: 'always',
+    // ...
+  }
+}
+```
+
+可以手动添加一个远程的 GitHub 仓库，或者使用下面的命令添加：
+
+```sh
+stage publish
+```
+
+> tips：需要全局安装@fujia/cli-core，这样才能在全局环境中使用 stage 命令。
+
+3. 构建一个未打包的应用，便于测试。
 
 ```sh
 npm run pack
